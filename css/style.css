@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+html, body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
+}
+:root{
+  --color:block;
+}
+/*---------------global classes----------------------------------------------------*/
+a{
+  text-decoration: none;
+  color: var(--color);
+}
+.container{
+  margin: 0 5vw;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul li{
+  list-style-type: none;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+  color: black;
+}
+/*--------------------end of global classes--------------------------------------*/
+
+/*--------------------nav bar-----------------------------------------------------*/
+.nav{
+  background-color: rgb(255, 255, 255);
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 9vh;
+  overflow: hidden;
+}
+.nav .nav-menu{
+  justify-content: space-between;
+}
+.nav .toggle-collapse{
+  position: absolute;
+  top: 0;
+  width: 86%;
+  cursor: pointer;
+  display: none;
+}
+.nav .toggle-collapse .toggle-icon{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icon{
+  font-size: 1.4rem;
+}
+.nav .nav-items{
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+.collapse{
+  height: 40rem;
+  background-color: rgb(255, 255, 255);
+}
+.nav .nav-items .nav-link{
+  padding: 1.6rem 1rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.nav-social{
+  padding: 1.4rem 0;
+}
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+.nav-social a i{
+  padding: 0.3rem;
+}
+.nav-social a i:hover{
+  color: #1100ff;
+}
+
+/*------------------end of nav bar-------------------------------------*/
+
+/*-------------------main content-------------------------------------*/
+
+ /*---------site title----------*/
+ main .site-title{
+   background:  linear-gradient(rgba(0, 0, 0, 0.753) , rgba(0, 0, 0, 0.603)),url(/Images/trees-bcg.jpeg);
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   min-height: 100vh;
+ }
+ main .sit-title .site-background{
+   padding-top: 10rem;
+   text-align: center;
+ }
+ main .site-title h1, h3{
+   color: white;
+   text-align: center;
+ }
+ .kenya-safaris{
+   display: flex;
+   justify-content: center;
+   margin-top: 350px;
+   margin-bottom: 0px;
+   font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .amazing-place{
+   font-size: 2.4rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-top: 50px;
+ }
+ .btn{
+   background-color: skyblue;
+   border: none;
+   outline: none;
+   border-radius: 2rem;
+   padding: 1rem 3rem;
+   font-size: 1.3rem;
+   margin-left: 140px;
+   cursor: pointer;
+ }
+ .btn:hover{
+   background-color: transparent;
+   color: white;
+   border: none;
+   border: 1px solid white;
+ }
+ /*----------end of site title---------*/
+
+ /*-----------------blog caurosel--------------------*/
+
+ main .blog{
+  background: url(/Images/water-mark.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%;
+}
+
+main .blog .blog-post{
+  padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 85%;
+  height: 13cm;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title h3{
+  color: black;
+  font-size: 1.5rem;
+}
+
+main .blog-content .btn-blog{
+  padding: .7rem 2rem;
+  background: skyblue;
+  margin-left: .5rem;
+}
+main .blog-content .btn-blog:hover{
+  color: rgb(255, 255, 255);
+  background-color: green;
+}
+
+main .blog-content span{
+  display: block;
+  font-size: 1.4rem;
+}
+section .container .owl-nav{
+  position: absolute;
+  top: 0%;
+  margin: 60px 0  6px auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev
+.owl-nav .owl-next .owl-nav-next, i{
+  color: black;
+  font-weight: 900;
+  font-size: 40px !important;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next, i:hover{
+  color: black;
+  background: transparent;
+  background-color:whitesmoke !important;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+  background: transparent;
+  color: green;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+  outline: none;
+}
+
+
+ /*-----------------end of blog caurosel------------*/
+
+ 
+/*---------------------end of main content-----------------------------------*/
+
+
+/*-----------------media queriesview <=750px---------------------------*/
+@media(max-width:750px){
+  .nav .nav-menu, .nav .nav-items{
+    flex-direction: column;
+  }
+  .nav .toggle-collapse{
+    display: initial;
+  }
+}
+
+/*----------------------view <=750px----------------------------------*/
